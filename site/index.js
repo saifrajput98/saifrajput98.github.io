@@ -17,4 +17,3 @@ let myCountPopulation = '1100000';
 let language = 'Urdu';
 
 let description = myCountry + ' is in ' + continent + ' and its ' + myCountPopulation + ' people speak ' + language;
-console.log(description);

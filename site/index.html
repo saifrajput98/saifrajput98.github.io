@@ -5,10 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        button {
+            background-color: black;
+            color: aliceblue;
+            padding: 20px;
+            font-size: 25px;
+            animation-name: buttonAnimate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        button:hover {
+            /* font-size: 30px; */
+            background-color: brown;
+            color: antiquewhite;
+            /* transition: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transform: translate(10px); */
+
+        }
+
+        .loader {
+            width: 150px;
+            height: 150px;
+            border: 20px solid brown;
+            border-top: 20px solid #000;
+            border-radius: 50%;
+            position: relative;
+            top: 30px;
+            animation-name: loaderAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes loaderAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+                border-top: 20px solid #0ef854;
+            }
+
+            100% {
+                transform: rotate(360deg);
+                border-top: 20px solid #000;
+            }
+        }
+
+        @keyframes buttonAnimate {
+            0% {
+                transform: translate(0, 0px);
+            }
+
+            50% {
+                transform: translate(0, 15px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+
+        }
+    </style>
 </head>
 
 <body>
     <h1>JS Practice</h1>
+    <button>Click Here</button>
+    <div class="loader"></div>
     <script src="/index.js"></script>
 </body>
 

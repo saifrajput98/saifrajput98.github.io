@@ -41,7 +41,6 @@ let avgPopulation = 33000000;
 //     console.log("No Borders");
 // }
 
-
 // let country = "Canada";
 // let speaksEnglish = true;
 // let population = 200000;
@@ -53,7 +52,6 @@ let avgPopulation = 33000000;
 // else {
 //     console.log(`${country} does not meet your criteria`);
 // }
-
 
 // let team1 = "Dolphin";
 // let team2 = "Koalas";
@@ -93,7 +91,6 @@ let avgPopulation = 33000000;
 // console.log(bill);
 // console.log(tip);
 // console.log(tip + bill);
-
 
 // function describeCountry(country, population, capitalCity) {
 //     let info = `${country} has ${population} population and its capital city is ${capitalCity}`;
@@ -159,7 +156,6 @@ let avgPopulation = 33000000;
 // let expercentage3 = percentageOfWorld2(6441);
 // console.log(expercentage3);
 
-
 // let teamDolphins;
 // let teamKoalas;
 // let calcAverage = (a, b, c) => (a + b + c) / 3;
@@ -186,7 +182,6 @@ let avgPopulation = 33000000;
 // scoreDolphins = calcAverage(85, 54, 41);
 // scoreKoalas = calcAverage(23, 34, 27);
 // console.log(checkWinner(scoreDolphins, scoreKoalas));
-
 
 // let calcTip = function (bills) {
 //     let tip = bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
@@ -245,25 +240,26 @@ let saif = {
 // console.log(saif.calcAge());
 // console.log(saif);
 
-
 let jonas = {
-    firstName: 'Jonas',
-    lastName: 'Rajput',
-    birthYear: 1998,
-    job: 'Developer',
-    hasDriverLicense: true,
+  firstName: "Jonas",
+  lastName: "Rajput",
+  birthYear: 1998,
+  job: "Developer",
+  hasDriverLicense: true,
 
-    calcAge: function () {
-        this.age = 2024 - this.birthYear;
-        return this.age;
-    },
+  calcAge: function () {
+    this.age = 2024 - this.birthYear;
+    return this.age;
+  },
 
-    getSummary: function () {
-        return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} drivers license`;
-    },
-    // return this.hasDriverLicense,
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} year old ${
+      this.job
+    }, and he has ${this.hasDriverLicense ? "a" : "no"} drivers license`;
+  },
+  // return this.hasDriverLicense,
 
-    // drive: this.hasDriverLicense ? "a driver's License" : "not a Driver's License",
+  // drive: this.hasDriverLicense ? "a driver's License" : "not a Driver's License",
 };
 
 // console.log(jonas.drive);
@@ -273,28 +269,26 @@ let jonas = {
 // console.log(jonas.getSummary());
 
 let mark = {
-    fullName: 'Mark Miller',
-    mass: 78,
-    height: 1.69,
-    calcBMI: function () {
-        return this.mass / this.height ** 2;
-    }
-}
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    return this.mass / this.height ** 2;
+  },
+};
 let john = {
-    fullName: 'John Smith',
-    mass: 92,
-    height: 1.95,
-    calcBMI: function () {
-        return this.mass / this.height ** 2;
-    }
-}
-
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    return this.mass / this.height ** 2;
+  },
+};
 
 // console.log(john.calcBMI() > mark.calcBMI() ? `John's BMI ${john.calcBMI()} is higher than Marks's BMI ${mark.calcBMI()}` : `Mark's BMI ${mark.calcBMI()} is higher than John's BMI ${john.calcBMI()}`);
 
 // console.log(john.calcBMI());
 // console.log(mark.calcBMI());
-
 
 // function percentageOfWorld1(population) {
 //     let worldPopulation = 7900;
@@ -309,7 +303,6 @@ let john = {
 //     console.log(description);
 // }
 // describePopulation('portugal', 10);
-
 
 // function percentageOfWorld1(population) {
 //     let worldPopulation = 7900;
@@ -342,7 +335,6 @@ let john = {
 // neighbours[neighbours.indexOf('India')] = 'Hindustan';
 // console.log(neighbours);
 
-
 // let myCountry = {
 //     country: 'Pakistan',
 //     capital: 'Islamabad',
@@ -360,22 +352,21 @@ let john = {
 // myCountry['population'] -= 2;
 // console.log(myCountry.population);
 
-
 let myCountry = {
-    country: 'Pakistan',
-    capital: 'Islamabad',
-    language: 'Urdu',
-    population: 250,
-    neighbours: ['india', 'Iran', 'China'],
-    describe: function () {
-        this.description = `${this.country} has ${this.population} million ${this.language} speaking people, ${this.neighbours.length} neighbouring countries and a cpital called ${this.capital}`;
-        return this.description;
-    },
-    checkIsland: function () {
-        this.isIsland = this.neighbours.length === 3 ? true : false;
-        return this.isIsland;
-    }
-}
+  country: "Pakistan",
+  capital: "Islamabad",
+  language: "Urdu",
+  population: 250,
+  neighbours: ["india", "Iran", "China"],
+  describe: function () {
+    this.description = `${this.country} has ${this.population} million ${this.language} speaking people, ${this.neighbours.length} neighbouring countries and a cpital called ${this.capital}`;
+    return this.description;
+  },
+  checkIsland: function () {
+    this.isIsland = this.neighbours.length === 3 ? true : false;
+    return this.isIsland;
+  },
+};
 // console.log(myCountry.describe());
 // console.log(myCountry.checkIsland());
 // for (let voters = 1; voters <= 50; voters++) {
@@ -383,11 +374,11 @@ let myCountry = {
 // }
 
 let jonasArray = [
-    'Jonas',
-    'Lorem',
-    2037 - 1991,
-    'teacher',
-    ['Michael', 'Peter', 'Steven']
+  "Jonas",
+  "Lorem",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
 ];
 
 // let type = [];
@@ -408,15 +399,15 @@ let jonasArray = [
 // console.log(age);
 
 for (let i = jonasArray.length - 1; i >= 0; i--) {
-    // console.log(jonasArray[i]);
+  // console.log(jonasArray[i]);
 }
 
 for (let exercise = 1; exercise < 4; exercise++) {
-    // console.log(`***Exercise: ${exercise}***`);
+  // console.log(`***Exercise: ${exercise}***`);
 
-    for (let i = 1; i < 6; i++) {
-        // console.log(`Exercise: ${exercise}----- Repitition ${i}`);
-    }
+  for (let i = 1; i < 6; i++) {
+    // console.log(`Exercise: ${exercise}----- Repitition ${i}`);
+  }
 }
 
 // let numRows = 5
@@ -447,12 +438,15 @@ for (let exercise = 1; exercise < 4; exercise++) {
 //     console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1));
 // }
 
-
-let listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
-
+let listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
 for (let i = 0; i < listOfNeighbours.length; i++) {
-    let innerCountry = listOfNeighbours[i];
-    for (let n = 0; n < innerCountry.length; n++) {
-        console.log(`neighbour: ${innerCountry[n]}`);
-    }
+  let innerCountry = listOfNeighbours[i];
+  for (let n = 0; n < innerCountry.length; n++) {
+    console.log(`neighbour: ${innerCountry[n]}`);
+  }
 }
+console.log();

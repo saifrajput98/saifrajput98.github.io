@@ -24,5 +24,6 @@ for (let i = 0; i < btnShowModal.length; i++) {
 document.addEventListener('keydown', function(e){
     if(e.key === 'Escape' && !modal.classList.contains('hidden')){
         closeModal();
+        console.log('modal is closed');
     }
 });

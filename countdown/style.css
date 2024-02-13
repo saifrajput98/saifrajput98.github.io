@@ -1,18 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   background-color: #8a9a5b;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
+}
+h2 {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 .countdown {
   background-color: #355e3b;
   color: #fff;
   padding: 50px;
   border-radius: 20px;
-  display: flex;
-  gap: 20px;
   font-size: 40px;
   font-family: "Poppins", sans-serif;
   box-shadow: 0px 1px 10px 7px rgba(0, 0, 0, 0.15);
+}
+.timer {
+  display: flex;
+  gap: 20px;
 }
